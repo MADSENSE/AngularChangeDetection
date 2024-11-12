@@ -1,0 +1,17 @@
+<form [formGroup]="form">
+  <div>
+    <label for="name"> Name </label>
+    <dx-text-box
+      type="text"
+      formControlName="firstname"
+      placeholder="Name"
+      valueChangeEvent="blur"
+    >
+    </dx-text-box>
+  </div>
+  <div>
+    <label for="name"> Lastname </label>
+    <dx-text-box type="text" formControlName="lastname" placeholder="Lastname">
+    </dx-text-box>
+  </div>
+</form>

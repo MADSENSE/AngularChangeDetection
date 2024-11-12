@@ -1,0 +1,11 @@
+<app-child-component [form]="this.form"></app-child-component>
+
+<div>
+  <button
+    type="submit"
+    [disabled]="this.form.pristine || this.form.invalid"
+    (click)="clickMe()"
+  >
+    Click Me!
+  </button>
+</div>
